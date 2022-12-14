@@ -1,0 +1,23 @@
+
+.area{
+    text-align: left;
+    margin: .4em 0;
+}
+
+.area__text{
+    display: block;
+    margin-bottom: .5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+}
+
+.area__content{
+    width: 50%;
+    min-height: 100px;
+}
+
+@media screen and (max-width: 600px){
+    .area__content{
+        width:100%;
+    }
+}

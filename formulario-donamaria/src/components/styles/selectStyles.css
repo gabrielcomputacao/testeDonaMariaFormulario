@@ -1,0 +1,34 @@
+
+.selec{
+    margin: .7em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.selec__texto{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif  ;
+    margin-bottom: .3em;
+    font-size: 1.2em;
+}
+
+.selec__escolhas{
+    padding: .6em;
+    width: 100%;
+    min-width: 400px;
+    margin-right: 2em;
+}
+
+.escolhas__opt{
+    font-size: 1.3em;
+    margin: .4em;
+    
+}
+
+@media screen and (max-width: 600px){
+    .selec__escolhas{
+        width:100%;
+    }
+}
