@@ -49,19 +49,23 @@ function App() {
   }
 
   function getDados(e) {
-    if (e.target.checked) {
-      setDadosHabilidade([...dadosHabilidades, e.target.value]);
-    } else {
+    
       setDados({
         ...dados,
         [e.target.name]: e.target.value,
       });
-    }
+    
   }
 
   function getDadosAtividades(e) {
     if (e.target.checked) {
       setDadosAtividade([...dadosAtividade, e.target.value]);
+    }
+  }
+
+  function getDadosHabilidades(e) {
+    if (e.target.checked) {
+      setDadosHabilidade([...dadosHabilidades, e.target.value]);
     }
   }
 
@@ -75,7 +79,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <h1>Formulário Contratação</h1>
+        <h1>Formulário de Contratação</h1>
         <div>
           <form onSubmit={handleSubmit}>
             <div className="conjunto">
@@ -114,7 +118,7 @@ function App() {
               catchDados={getDados}
             />
 
-            <Habilidades identificador="habilidade" catchDados={getDados} />
+            <Habilidades identificador="habilidade" catchDados={getDadosHabilidades} />
             <Input type="text" text="Outras Habilidades" textName="outrashabilidades" catchDados={getDados}/>
 
             <div className="conjunto">
@@ -127,7 +131,7 @@ function App() {
               <AdicionarItem item={experiencia} handleItem={setExperiencia} />
             </div>
 
-            <button>Enviar</button>
+            <button className="buttonEnviar">Enviar</button>
           </form>
         </div>
       </div>

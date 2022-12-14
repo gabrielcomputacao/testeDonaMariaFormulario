@@ -13,3 +13,17 @@
   flex-wrap: wrap;
 }
 
+.buttonEnviar{
+  width: 350px;
+  margin-top: 2em;
+  font-weight: 600;
+  
+}
+
+@media screen and (max-width:550px){
+  .buttonEnviar{
+    width: 100%;
+   
+    
+  }
+}

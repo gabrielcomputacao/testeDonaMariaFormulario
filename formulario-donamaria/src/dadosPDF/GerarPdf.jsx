@@ -25,7 +25,7 @@ function GerarPDF(dados){
 
     const details = [{
        
-       text: `Cargo: ${dados.cargo},\n\nSalário: ${dados.salario}\n\n Atividades:  ${dados.atividades}\n\n outras Atividades:  ${dados.outrasAtividades}\n\n Experiência:  ${dados.experiencia}\n\n Benefícios:  ${dados.beneficios}\n\n Etapas:  ${dados.etapas} \n\n ${dados.habilidades}\n\n ${dados.atividades}. `
+       text: `Cargo: ${dados.cargo},\n\nSalário: ${dados.salario}\n\n Atividades:  ${dados.atividades}\n\n Outras Atividades:  ${dados.outrasAtividades}\n\n Experiência:  ${dados.experiencia}\n\n Benefícios:  ${dados.beneficios}\n\n Etapas:  ${dados.etapas} \n\n Habilidades: ${dados.habilidades}\n\n Outras Habilidades Necessárias: ${dados.outrashabilidades}. `
 
     }];
 
@@ -47,7 +47,7 @@ function GerarPDF(dados){
         footer:[rodape]
     }
 
-    pdfMake.createPdf(docDefinition).download();
+    pdfMake.createPdf(docDefinition).download("Formulario Dona Maria");
 
 }
 

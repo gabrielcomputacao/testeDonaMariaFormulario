@@ -32,3 +32,11 @@
     background-color: rgb(24, 23, 24);
     color: #fff;
 }
+
+@media screen and (max-width: 610px){
+    .getOpcao{
+       
+        left: 60%;
+        top: -200px;
+    }
+}
